@@ -19,6 +19,23 @@ h3 {
     color: #fff;
 }
 
+
+/*HIDDING THE SCROLLBAR FOR ALL*/
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 a {
     text-decoration: none;
 }
@@ -195,27 +212,11 @@ button i {
     padding: 10px 0;
 }
 
-.entities {
+.entities,
+.videos {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-}
-
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-
-.entities::-webkit-scrollbar {
-    display: none;
-}
-
-
-/* Hide scrollbar for IE, Edge and Firefox */
-
-.entities {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
 }
 
 .previewCategories {
@@ -232,4 +233,76 @@ button i {
     width: 100%;
     text-align: center;
     font-size: 18px;
+}
+
+
+/**STYLING SEASON PAGE**/
+
+.season {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+
+.episodeContainer {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 4px;
+}
+
+.episodeContainer .contents {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+}
+
+.episodeContainer img {
+    width: 230px;
+    height: 129px;
+    object-fit: cover;
+}
+
+.episodeContainer .videoInfo h4,
+.episodeContainer .videoInfo span {
+    color: #fff;
+    width: 100%;
+    white-space: normal;
+}
+
+.episodeContainer .videoInfo {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.previewCategories.noScroll .category .entities {
+    white-space: normal;
+}
+
+.watchContainer video {
+    width: 100%;
+}
+
+.videoControls {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.videoControls h1 {
+    color: #fff;
+}
+
+.videoControls button {
+    font-size: 40px;
+    padding: 50px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+.videoControls button:hover {
+    cursor: pointer;
 }

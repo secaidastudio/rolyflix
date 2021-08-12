@@ -14,23 +14,22 @@ class SeasonProvider{
             return;
         }
 
-        $seasonsHtml="";
-
+        $seasonsHtml= "";
         foreach ($seasons as $season ) {
             $seasonNumber = $season->getSeasonNumber();
 
-            $videosHtml="";
-            foreach ($season->getVideos() as $video) {
+            $videosHtml = "";
+            foreach($season->getVideos() as $video){
                 $videosHtml .= $this->createVideoSquare($video);
             }
 
-            $seasonsHtml .="<div class ='season'>
-                            <h3>Season $seasonNumber</h3>
+            $seasonsHtml .= "<div class='season'>
+                                <h3>Season $seasonNumber</h3>
                                 <div class='videos'>
-                                    $videosHtml
-                                </div
-                            </div>";
-        }
+                                $videosHtml
+                                </div>
+                             </div>";
+        } 
 
         return $seasonsHtml;
     }
@@ -48,7 +47,7 @@ class SeasonProvider{
                                 <img src='$thumbnail'>
                                 
                                 <div class='videoInfo'>
-                                    <h4>$title</h4>
+                                    <h4>$episode. $title</h4>
                                     <span>$description</span>
                                 </div>
                             </div>
