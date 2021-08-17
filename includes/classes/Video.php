@@ -36,8 +36,12 @@ class Video{
     public function getThumbnail(){
         return $this->entity->getThumbnail();
     }
-    public function getEpisode(){
+    public function getEpisodeNumber(){
         return $this->sqlData["episode"];
+    }
+
+    public function getSeasonNumber(){
+        return $this->sqlData["season"];
     }
 
     public function incrementViews(){
