@@ -1,6 +1,5 @@
 # Rolyflix
-## This is a sample version of Netflix created by following what I learned through the web development courses in Udemy.com 
-### Created using:
+## A Netflix clone created using:
 - PHP, 
 - HTML, 
 - CSS, 
