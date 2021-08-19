@@ -174,6 +174,12 @@ a {
     margin: 15px 0;
 }
 
+.previewOverlay .mainDetails h4 {
+    color: #fff;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
 .previewOverlay .mainDetails {
     position: relative;
     top: 35%;
@@ -254,6 +260,7 @@ button i {
     display: flex;
     flex-direction: column;
     width: 230px;
+    position: relative;
 }
 
 .episodeContainer img {
@@ -305,4 +312,78 @@ button i {
 
 .videoControls button:hover {
     cursor: pointer;
+}
+
+.upNext {
+    height: 100%;
+    justify-content: center;
+}
+
+.upNextContainer button {
+    padding: 0;
+}
+
+.upNextContainer h2,
+.upNextContainer h3 {
+    color: #fff;
+}
+
+.watchNav {
+    z-index: 2;
+}
+
+.seen {
+    color: #2ecc71;
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.topBar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    height: 70px;
+    box-sizing: border-box;
+    min-width: 1050px;
+    transition: background-color 200ms linear;
+}
+
+.topBar.scrolled {
+    background-color: #141414;
+    transition: background-color 200ms linear;
+}
+
+.logoContainer {
+    height: 40px;
+}
+
+.logoContainer img {
+    height: 100%;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+}
+
+.navLinks a {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.rightItems {
+    text-align: right;
+    flex: 1;
+}
+
+.rightItems i {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
 }
