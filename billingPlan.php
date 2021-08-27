@@ -11,7 +11,7 @@ use PayPal\Common\PayPalModel;
 
 // Create a new billing plan
 $plan = new Plan();
-$plan->setName('Reecflix monthly subscription')
+$plan->setName('Rolyflix monthly subscription')
   ->setDescription('Gets you all the features of our site.')
   ->setType('INFINITE');
 
